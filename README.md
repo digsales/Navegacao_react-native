@@ -2,7 +2,7 @@
 
 ### Setting up project
 
-    npx create-expo-app mines
+    npx create-expo-app Navegacao
     
 ### Initializing app
 
