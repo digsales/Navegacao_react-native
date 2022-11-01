@@ -1,4 +1,4 @@
-# Navegacao_react-native
+# Navegação
 
 ### Setting up project
 
