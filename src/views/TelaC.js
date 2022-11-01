@@ -2,5 +2,11 @@ import React from "react";
 import TextoCentral from "../components/TextoCentral";
 
 export default (props) => {
-  return <TextoCentral corFundo={"green"}>Tela C</TextoCentral>;
+  const route = props.route || 0;
+
+  return (
+    <TextoCentral corFundo={"green"}>
+      Tela C - {route.params.numero || 0}
+    </TextoCentral>
+  );
 };

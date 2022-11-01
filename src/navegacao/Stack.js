@@ -23,12 +23,28 @@ export default (props) => {
       </Stack.Screen>
       <Stack.Screen name="TelaB">
         {(props) => (
-          <PassoStack {...props} avancar="TelaC">
+          <PassoStack
+            {...props}
+            voltar
+            avancar="TelaC"
+            avancarParams={{ numero: 0 }}
+          >
             <TelaB />
           </PassoStack>
         )}
       </Stack.Screen>
-      <Stack.Screen name="TelaC" component={TelaC} />
+      <Stack.Screen name="TelaC">
+        {(props) => (
+          <PassoStack
+            {...props}
+            voltar
+            avancar="TelaC"
+            avancarParams={{ numero: parseInt(Math.random() * 1000) }}
+          >
+            <TelaC {...props} />
+          </PassoStack>
+        )}
+      </Stack.Screen>
     </Stack.Navigator>
   );
 };
