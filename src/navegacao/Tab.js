@@ -1,10 +1,8 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import TelaA from "../views/TelaA";
 import TelaB from "../views/TelaB";
 import TelaC from "../views/TelaC";
-import PassoStack from "../components/PassoStack";
 
 export default (props) => {
   const Tab = createBottomTabNavigator();
