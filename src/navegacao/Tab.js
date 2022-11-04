@@ -4,6 +4,7 @@ import TelaA from "../views/TelaA";
 import TelaB from "../views/TelaB";
 import TelaC from "../views/TelaC";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import { Text } from "react-native";
 
 export default (props) => {
   const Tab = createBottomTabNavigator();
@@ -27,11 +28,17 @@ export default (props) => {
               iconName = focused ? "ios-list" : "ios-list-outline";
               break;
           }
-          // You can return any component that you like here!
           return <Ionicons name={iconName} size={20} color={color} />;
         },
         tabBarActiveTintColor: "red",
         tabBarInactiveTintColor: "blue",
+        // tabBarLabel: ({ focused }) => {
+        //   return (
+        //     <Text style={{ fontSize: 15, color: focused ? "red" : false }}>
+        //       {focused ? route.name : ""}
+        //     </Text>
+        //   );
+        // },
         // tabBarShowLabel: false,
         tabBarLabelStyle: { fontSize: 15 },
       })}
