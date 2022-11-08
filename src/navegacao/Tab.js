@@ -1,10 +1,10 @@
 import React from "react";
+// import { Text } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import TelaA from "../views/TelaA";
 import TelaB from "../views/TelaB";
 import TelaC from "../views/TelaC";
 import Ionicons from "@expo/vector-icons/Ionicons";
-import { Text } from "react-native";
 
 export default (props) => {
   const Tab = createBottomTabNavigator();
